@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='analysis_result.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surfactant Analysis Results</title>
+    
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Surfactant Analysis Results</h1>
+
+        
+        <!-- Display textual results -->
+        <div class="results">
+            <h2>Analysis Summary</h2>
+            <p>Critical Micelle Concentration (CMC): {{ result['target_conc'] }} mg</p>
+            <p>Specific Conductivity: {{ result['target_cond'] }} microS/cm</p>
+            <!-- Add more analysis parameters as needed -->
+        </div>
+        
+        <!-- Display the detailed DataFrame -->
+        <div class="table">
+            <h2>Analysis Details</h2>
+            {{ result['result']|safe }}
+        </div>
+        
+        <!-- Display plots and charts -->
+
+        <img src="data:image/png;base64,{{ result['plot1'] }}" alt="Concentration Verses Conductivity">
+       
+        
+        
+        <!-- Add navigation buttons or links -->
+        <div class="navigation">
+            <a href="{{ url_for('index') }}">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

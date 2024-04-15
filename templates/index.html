@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div class="main">
+    <div class="background-image"></div> <!-- This div is for the full background image, assuming you have applied CSS for it -->
+    <h1>IOT BASED CHEMIPROBE FOR SURFACTANT PERFORMANCE MODELLING</h1>
+    <!--<h2>Welcome to the Home Page</h2>-->
+    <!--<div class= "Objective">
+        <h3>OBJECTIVE</h3>
+        <p></p>-->
+    <div class = "project-details">
+        <h3>Dipen Rodda - 20104A0071<h3>
+        <h3>Akhil Vijayan - 20104A0040<h3>
+        <h3> Ninad Rajpurkar - 20104B0020<h3>
+        <h3> Aditya Jadhav - 21104A2010<h3>
+        <h3> Under the Guidance of <h3>
+        <h3>Prof.Vaibhav Kshirsagar <h3>
+        
+    </div>
+</div>
+    <div class="content-wrapper">
+        <div class="Objective">
+            <h2>OBJECTIVE</h2>
+            <p>The primary objective of this project is to create an intuitive and accessible web interface that empowers users to explore and understand the surfactant performance of various detergent samples. 
+                By integrating a database of detergent samples with their respective Critical Micelle Concentration (CMC) values, the webpage facilitates seamless selection and retrieval of pertinent data. 
+                This platform serves as a valuable resource for researchers, scientists, and industry professionals involved in the formulation, testing, and optimization of detergent products.
+                Through transparent and efficient dissemination of surfactant data, the project aims to enhance decision-making processes and drive advancements in detergent technology.</p>
+        </div>
+        <div class="button-container">
+            <a href="{{ url_for('login') }}"><button>Login</button></a>
+            <a href="{{ url_for('register') }}"><button>Register</button></a>
+        </div>
+    </div>
+
+    <!-- Your webpage content goes here -->
+</body>
+</html>
+

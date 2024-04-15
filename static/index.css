@@ -1,0 +1,111 @@
+/* style1.css */
+
+/* Resetting default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', Arial, Helvetica, sans-serif;
+}
+
+/* Background image */
+.background-image {
+    background-image: url('project_back-photo.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it's behind other content */
+}
+
+/* Centering the content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    flex-direction: column;
+}
+
+/* Styling the welcome message */
+h1{
+    text-align: center;
+    color: #fff; /* Text color */
+    margin-top: 2%;
+    
+  
+}
+
+.project-details {
+    text-align: center;
+    color: #fff; /* Text color */
+}
+
+.Objective {
+    text-align:left;
+    color:#fff;
+    margin-top:10px;
+    
+  
+    
+}
+.Objective  p{
+    text-align:left;
+    font-size: 16px;
+    
+}
+.main{
+    margin-top: 7%;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between; /* Ensure equal spacing between the Objective and the buttons */
+    align-items: center; /* Align items vertically */
+    width: 60%; /* Adjust the width as needed */
+    margin-top: 3%;
+    margin-right: 10%;
+     /* Adjust top margin */
+  
+}
+
+
+/*p {
+    padding-left: 10px;
+    padding-right: 30px;
+    margin-left: 15px;
+}*/
+
+/* Styling the button container */
+.button-container {
+    /*text-align: right;*/
+    display: flex; /* Set display to flex */
+    align-items: center;
+    margin-left: 1in;
+    
+    
+    /*margin-left: 80px;*/
+    /* Adjust spacing from the welcome message */
+   
+}
+
+/* Styling the buttons */
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: white; /* White background */
+    color: #333; /* Text color */
+    font-size: 16px;
+    cursor: pointer;
+    margin: 6px; /* Adjust spacing between buttons */
+    border-radius: 16px;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #ddd; /* Light gray background on hover */
+}
+
+
